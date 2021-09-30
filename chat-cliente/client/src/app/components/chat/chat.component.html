@@ -1,0 +1,44 @@
+<div class="header">
+    <!-- <h1>CHAT</h1> -->
+    <!-- <h2>Bienvenid@ {{userChat.user}} <br></h2> -->
+    <div class="textCenter">
+        <h4> ¡Hola {{userChat.user}}! :)</h4>
+    </div>
+    <div class="">
+        <button mat-button>LLAMADA </button>
+        <button mat-button>VIDEOLLAMADA</button>
+        <button mat-button>MEDIA</button>
+
+    </div>
+
+</div>
+
+<div class="content" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+    <div class="mensajes">
+        <div class="mt-3">
+
+            <div *ngFor="let a of myMessages">
+                <div class="mensajesOtros" *ngIf="userChat.user!=a.user; else yo">
+                    <label for="" style="font-weight: bold;">{{a.user}} <br> </label>
+                    <span>{{a.text}}</span>
+                </div>
+
+                <ng-template #yo>
+                    <div class="mensajesYo">
+                        <span>{{a.text}}</span>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="centrar">
+    <mat-form-field class="example-form-field" style="width: 70%;" appearance="fill">
+        <mat-label>Mensaje</mat-label>
+        <!-- <textarea matInput type="text" (change)="myMessage()" [(ngModel)]="userChat.text" ></textarea> -->
+        <input matInput type="text" (change)="myMessage()" [(ngModel)]="userChat.text">
+    </mat-form-field>
+    <button mat-button (click)="myMessage()">ENVIAR</button>
+</div>

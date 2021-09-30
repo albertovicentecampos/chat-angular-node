@@ -1,0 +1,99 @@
+.mensajesYo {
+    border: 2px solid #525252;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+
+    padding: 10px;
+    min-width: 50px;
+    /* max-width: 200px; */
+    
+    overflow: auto;
+
+    margin-top: 10px;
+    /* background-color: rgba(242, 215, 253, 0.404); */
+
+    text-align: right;
+}
+
+.mensajesOtros {
+    border: 2px solid #001ec5;
+
+    background-color: #b5bcff;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    min-width: 50px;
+    /* width: 200px; */
+    overflow: auto;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.mensajes {
+    width: 40%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 5px;
+    background-color: #333;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    height: 80%;
+    overflow: auto;
+    padding: 0% 1% 0% 1%;
+    width: 98%;
+    
+}
+
+p {
+    width: 600px;
+    margin: 10px auto;
+    padding: 5px;
+    border: solid 2px #f60;
+    font: normal 13px arial, helvetica, sans-serif;
+}
+
+.mensaje {
+    white-space: normal;
+}
+
+.centrar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 15px;
+    background-color: rgba(129, 129, 129, 0.452);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.textCenter {
+    margin-left: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    float: left;
+}
